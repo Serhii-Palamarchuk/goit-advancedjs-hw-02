@@ -80,6 +80,11 @@ function startCountdown() {
       clearInterval(countdownInterval);
       updateTimerUI({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       datePicker.disabled = false;
+      iziToast.info({
+        title: 'Finished',
+        message: 'Time has finished',
+        position: 'topRight',
+      });
       return;
     }
 
